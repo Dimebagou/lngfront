@@ -1,72 +1,69 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Legal Notices Generator (Front-end)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Legal Notices Generator est une application web qui vous aide à générer des mentions légales pour votre site web. Il vous permet de remplir les informations requises et génère un PDF avec les mentions légales.
 
-In the project directory, you can run:
+*Legal Notices Generator is a web application that helps you generate legal notices for your website. It allows you to fill in the required information and generates a PDF with the legal notices.*
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Utilisées / Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- React Hook Form
+- react-toastify
+- @react-pdf/renderer
+- react-spinners
 
-### `npm test`
+## Pour Commencer / Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Suivez ces instructions pour obtenir une copie du projet sur votre machine locale à des fins de développement et de test.*
 
-### `npm run build`
+*Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prérequis / Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14.x ou version supérieure / *or higher*)
+- npm (v6.x ou version supérieure / *or higher*)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clonez le dépôt sur votre machine locale / *Clone the repository to your local machine* :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+````bash
+ git clone https://github.com/Dimebagou/lngfront.git
+ cd lgnfront
+````
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Installez les dépendances / *Install the dependencies* :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+````bash
+ npm install
+````
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+3. Lancez le serveur de développement / *Run the development server* :
+````bash
+ npm start
+````
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Le front-end devrait maintenant être accessible à : 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*The front-end should now be running at : *
 
-### Code Splitting
+[http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Comment Utiliser / How to Use
 
-### Analyzing the Bundle Size
+1. Remplissez les informations requises dans les champs du formulaire / *Fill in the required information in the form fields.*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Cliquez sur le bouton "Générer le PDF" pour créer les mentions légales au format PDF / *Click on the "Générer le PDF" button to generate the legal notices in PDF format*.
 
-### Making a Progressive Web App
+3. Facultativement (et si vous avez installé le back-end : [https://github.com/Dimebagou/lngback](https://github.com/Dimebagou/lngback)), vous pouvez entrer votre adresse e-mail et cliquer sur le bouton "Recevoir le PDF par mail" pour recevoir le PDF par e-mail. / *Optionally (and if you have installed the back-end: [https://github.com/Dimebagou/lngback](https://github.com/Dimebagou/lngback)), you can enter your email address and click on the "Recevoir le PDF par mail" button to receive the PDF via email.*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contribution
 
-### Advanced Configuration
+Les contributions sont les bienvenues ! Si vous trouvez des problèmes ou avez des suggestions d'amélioration, n'hésitez pas à ouvrir une nouvelle issue ou à soumettre une pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+*Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open a new issue or submit a pull request.*
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
