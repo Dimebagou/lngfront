@@ -1,0 +1,31 @@
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding-inline: 20rem;
+}
+
+
+
+.pdf-container input {
+    text-align: center;
+    min-width: 80%;
+    padding: 4px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px var(--background-shadow-color);
+    font-size: 1.4rem;
+    font-family: "Amiko", sans-serif;
+}
+
+.pdf-container input::placeholder {
+    color: var(--button-color);
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Amiko", sans-serif;
+    font-size: 0.8rem;
+}

@@ -1,38 +1,683 @@
+/* Reset général */
+/* #region */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+/* Correctif pour les éléments en ligne qui peuvent avoir des marges ou des remontées */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Elements HTML5 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Empêcher les images d'être redimensionnées à l'intérieur de leur conteneur */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Supprimer les bordures des tableaux */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Réinitialiser les styles de liste */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Réinitialiser les styles de formulaire */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+}
+
+/* Réinitialiser les styles de bouton */
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Remplacer le curseur de texte pour les éléments sans contenu */
+hr,
+input[type="text"],
+input[type="password"],
+textarea {
+    cursor: text;
+}
+
+/* Empêcher les éléments de liste de sauter lorsque vous ajoutez du contenu */
+li {
+    display: list-item;
+}
+
+/* Supprimer les styles par défaut pour les liens */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Réinitialiser la couleur de fond pour les éléments transparents */
+abbr[title],
+dfn[title] {
+    background: none;
+}
+
+/* Réinitialiser les polices héritées pour les éléments en italique */
+em {
+    font-style: normal;
+}
+
+/* Rendre les éléments en gras surprenants qui ne sont pas le texte par défaut en gras */
+strong {
+    font-weight: bold;
+}
+
+/* Réinitialiser la taille de la police pour les éléments hérités */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Remplacer le curseur pour les éléments cliquables */
+button,
+select,
+textarea {
+    cursor: pointer;
+}
+
+/* Réinitialiser les styles de tableau pour les tableaux de mise en page */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Réinitialiser les styles de tableau pour les tableaux de mise en page */
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+/* Réinitialiser les styles pour les éléments de type "quote" */
+blockquote {
+    quotes: none;
+}
+
+/* Réinitialiser les styles pour les éléments de type "quote" */
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+
+/* #endregion */
+
+/* Fonts */
+/* #region */
+/* amiko-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/public/Fonts/amiko-v12-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* amiko-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/public/Fonts/amiko-v12-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* #endregion */
+
+:root {
+    /* Primary Colors */
+    --primary-color: #3498db;
+    /* Blue */
+    --secondary-color: #95a5a6;
+    /* Gray */
+    --tertiary-color: #e74c3c;
+    /* Red */
+
+    /* Text Colors */
+    --primary-text-color: #f2f2f2;
+    /* White */
+    --secondary-text-color: #ecf0f1;
+    /* Light Gray */
+    --tertiary-text-color: #bdc3c7;
+    /* Medium Gray */
+
+
+    /* Background Colors */
+    --background-color: #2c3e50;
+    /* Dark Blue-Gray */
+    --background-shadow-color: #1f2b38;
+    /* Dark Blue-Gray with slight tint */
+
+    /* Border Color */
+    --border-color: #34495e;
+    /* Slightly lighter Blue-Gray */
+
+    /* Interaction Colors */
+    --link-color: #3498db;
+    /* Blue for links */
+    --link-hover-color: #1c7dbe;
+    /* Slightly darker blue on hover */
+    --button-color: #1C797D;
+    /* Blue for buttons */
+    --button-hover-color: #16A69D;
+    /* Slightly darker blue on hover */
+
+    /* Other Colors */
+    --success-color: #2ecc71;
+    /* Green for success messages */
+    --error-color: #e74c3c;
+    /* Red for error messages */
+    --warning-color: #f39c12;
+    /* Yellow for warning messages */
+    --info-color: #9b59b6;
+    /* Purple for informational messages */
+
+    --pdf-title: #2F5373;
+}
+
+
+
+
+html {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+body {
+    
+    margin: 0;
+    width: 100vw; 
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: "Amiko", sans-serif;
+    line-height: 1.5;
+    
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+button {
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0 2px 4px var(--background-color);
+    font-family: "Amiko", sans-serif;
+    font-size: 1rem;
+}
+
+.generate-button {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    font-weight: 700;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: 20rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.logo {
+    width: 10rem;
+    height: 10rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo img {
+    filter: drop-shadow(2px 2px 2px var(--background-shadow-color));
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+
+h1 {
+    color: var(--primary-text-color);
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-top: -55px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px black;
+    position: relative;
+    z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+h1::before {
+    position: absolute;
+    content: "";
+    top: 2.8rem;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--button-hover-color), var(--button-color));
+    margin-bottom: 10px;
+    z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+    color: var(--primary-text-color);
+    margin-bottom: 40px;
+    font-size: 0.5em;
+    font-weight: normal;
+    margin-top: -40px;
+    text-shadow: 2px 2px 4px black;
 }
+
+form {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--background-shadow-color);
+    border-radius: 4px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 2px 4px var(--background-shadow-color);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 4px;
+}
+
+
+
+
+
+.form-group label {
+    text-align: start;
+    flex: 1;
+    width: 50%;
+    text-shadow: 2px 2px 4px var(--background-color);
+    color: var(--primary-text-color);
+    background: linear-gradient(to right, var(--background-color), var(--background-shadow-color));
+    /* border: 2px solid var(--border-color); */
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: "Amiko", sans-serif;
+}
+
+.form-group input {
+    flex: 1;
+    width: 50%;
+    padding: 4px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px var(--background-shadow-color);
+    font-size: 1.2rem;
+    font-family: "Amiko", sans-serif;
+}
+
+.form-group input::placeholder {
+    color: var(--button-color);
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Amiko", sans-serif;
+    font-size: 0.8rem;
+}
+
+
+
+/* Cacher les flèches de l'input de type "number" */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+/* Rétablir l'apparence par défaut pour Firefox */
+input[type="number"] {
+    appearance: textfield;
+}
+
+h3 {
+    color: var(--primary-text-color);
+    margin-block: 20px;
+    font-size: 1.5em;
+    font-weight: normal;
+
+    text-shadow: 2px 2px 4px black;
+    position: relative;
+    z-index: 1;
+}
+
+h3::before {
+    position: absolute;
+    content: "";
+    top: 1.7rem;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(150deg, var(--button-hover-color), var(--button-color));
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+.contributors,
+.credits,
+.data-officer {
+    width: 100%;
+}
+
+.contributor-top label,
+.credit-top label,
+.data-officer-top label {
+    border-bottom-left-radius: 0;
+}
+
+.contributor-bottom label,
+.credit-bottom label {
+    border-bottom-left-radius: 0;
+}
+
+.contributor-bottom label,
+.credit-bottom label,
+.data-officer-bottom label {
+    border-top-left-radius: 0;
+}
+
+
+
+.contributors button,
+.credits button {
+    background: var(--error-color);
+    font-size: 1rem;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.contributors button:hover,
+.credits button:hover {
+    opacity: 0.8;
+    transform: scale(1);
+}
+
+
+
+
+@media only screen and (max-width: 1600px) {
+    .App {
+        padding-inline: 14rem;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .App {
+        padding-inline: 12rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .App {
+        padding-inline: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .App {
+        padding-inline: 8rem;
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    .App {
+        padding-inline: 6rem;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .App {
+        padding-inline: 4rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .App {
+        padding-inline: 2rem;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 730px) {
+
+    form {
+        width: 100%;
+        border: none;
+        border-radius: none;
+        margin: 0;
+
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        gap: 0;
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+
+    }
+
+    .form-group label {
+        text-align: start;
+        width: 100%;
+        text-shadow: none;
+        color: var(--primary-text-color);
+        padding: 4px;
+        background: linear-gradient(to bottom, var(--background-color), var(--background-shadow-color));
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .App {
+        padding-inline: 2rem;
+    }
+
+    .contributors button,
+    .credits button {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    .form-group label {
+        text-align: center;
+    }
+
+
+}
+
+button:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    font-weight: 400;
+}
+
+button:disabled:hover {
+    background-color: #cccccc;
+    transform: scale(1);
+}
+
+/* * {
+    outline: solid 1px red;
+} */
