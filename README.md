@@ -70,6 +70,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
-# lngfront
-This is the front-end of a Legal Notices Generator application
->>>>>>> 74300ae09bce28e8d6df11748c45e1ac4cf52b97
